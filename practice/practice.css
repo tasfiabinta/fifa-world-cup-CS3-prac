@@ -1,0 +1,84 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.box-sizing {
+  background-color: purple;
+  height: 700px;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  /* gap: 10px; */
+
+  /* using flex to center content/elements,, mostly used flex */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*using grid to center  */
+
+  /* display: grid;
+       /* place-content: center; */
+  /* place-items: center; */
+
+  /* using position to center */
+  /* first do position relative to parent div then do position absolute to child div and adjust left right so on */
+  position: relative;
+}
+
+.content-box {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  box-sizing: content-box;
+  padding: 80px;
+
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.border-box {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 80px;
+}
+
+.flag-green {
+  background-color: green;
+  height: 300px;
+  width: 500px;
+  position: relative;
+}
+
+.flag-rounded-red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.flag-rounded-white {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
