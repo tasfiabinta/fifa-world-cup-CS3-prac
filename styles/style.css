@@ -24,7 +24,39 @@
 img {
   max-width: 100%;
 }
+/* animation */
+
+@keyframes banner-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes banner-player-animation {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 /* custom style */
+
 .banner {
   display: flex;
   background-color: black;
@@ -32,6 +64,7 @@ img {
   color: white;
   border-radius: 15px;
   margin: 50px auto;
+  animation: banner-animation 0.7s ease-out forwards;
 }
 
 .banner h2 {
@@ -55,6 +88,7 @@ img {
 }
 .banner-right img {
   display: block;
+  animation: banner-player-animation 1s ease-in infinite;
 }
 
 /* Upcoming matches */
@@ -124,7 +158,7 @@ img {
 
 @media screen and (max-width: 992px) {
   .container {
-    margin: 0 20px;
+    margin: 40px 20px;
   }
 
   /* banner */
