@@ -178,4 +178,9 @@ img {
   .upcoming-matches-right {
     grid-template-columns: 1fr;
   }
+  .upcoming-matches-left {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 5px;
+  }
 }
